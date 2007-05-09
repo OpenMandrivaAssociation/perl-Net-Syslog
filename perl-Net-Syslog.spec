@@ -3,7 +3,7 @@
 Summary:	Perl extension for sending syslog messages directly to a remote syslogd
 Name:		perl-%{module}
 Version:	0.03
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
