@@ -13,7 +13,8 @@ BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-Net::Syslog - Perl extension for sending syslog messages directly to a remote syslogd.
+Net::Syslog - Perl extension for sending syslog messages directly to a remote
+syslogd.
 
 Net::Syslog implements the intra-host syslog forwarding protocol.
 It is not intended to replace the Sys::Syslog or
