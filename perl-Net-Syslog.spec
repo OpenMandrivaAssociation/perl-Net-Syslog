@@ -1,13 +1,14 @@
 %define  upstream_name    Net-Syslog
+%define upstream_version 0.04
 Name:		perl-%{upstream_name}
 Version:	0.04
-Release:	5
+Release:	1
 
 Summary:	Perl extension for sending syslog messages directly to a remote syslogd
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/L/LH/LHOWARD/Net-Syslog-0.04.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -38,44 +39,4 @@ make test
 %{perl_vendorlib}/Net/Syslog.pm
 %{_mandir}/man*/*
 
-
-%changelog
-* Mon Oct 25 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 589353
-- new version
-
-* Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
-+ Revision: 404247
-- rebuild using %0.04 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.03-7mdv2009.0
-+ Revision: 258134
-- rebuild
-
-* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.03-6mdv2009.0
-+ Revision: 246183
-- rebuild
-
-* Tue Feb 12 2008 Thierry Vignaud <tv@mandriva.org> 0.03-4mdv2008.1
-+ Revision: 166681
-- fix description-line-too-long
-- kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Wed May 09 2007 Oden Eriksson <oeriksson@mandriva.com> 0.03-4mdv2008.0
-+ Revision: 25451
-- rebuild
-
-* Tue May 08 2007 Olivier Thauvin <nanardon@mandriva.org> 0.03-3mdv2008.0
-+ Revision: 25197
-- rebuild
-
-
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.03-2mdk
-- Fix SPEC according to Perl Policy
-	- Source URL
-	- URL
-
-* Fri Feb 17 2006 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdk
-- initial Mandriva package
 
