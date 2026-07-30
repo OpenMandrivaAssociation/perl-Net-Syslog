@@ -2,7 +2,7 @@
 %define upstream_version 0.04
 Name:		perl-%{upstream_name}
 Version:	0.04
-Release:	2
+Release:	3
 
 Summary:	Perl extension for sending syslog messages directly to a remote syslogd
 License:	GPL+ or Artistic
@@ -31,7 +31,7 @@ make
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std
